@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 mkdir repos
 pushd repos
-git clone ssh://git@cs-git-research.cs.surrey.sfu.ca:24/amiralis/dandelion-generator.git
-git clone ssh://git@cs-git-research.cs.surrey.sfu.ca:24/amiralis/dandelion-lib.git
-git clone ssh://git@cs-git-research.cs.surrey.sfu.ca:24/amiralis/dandelion-sim.git
+git clone https://github.com/sfu-arch/uir.git
+git clone https://github.com/sfu-arch/uir-lib.git
+git clone https://github.com/sfu-arch/uir-sim.git
 popd
-sudo docker build -t dandelion .
+sudo docker build -t uir .
